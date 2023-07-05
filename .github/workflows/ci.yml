@@ -30,7 +30,7 @@ jobs:
       - name: Build and push docker image
         uses: docker/build-push-action@v4
         with:
-          context: .
+          context: ./g4f/.v1/
           platforms: linux/amd64,linux/arm64
           push: ${{ github.ref == 'refs/heads/main' }}
           tags: |
